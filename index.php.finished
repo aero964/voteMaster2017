@@ -4,8 +4,6 @@
 	<title>○○祭Web投票サイト</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script-->
 
 <style type="text/css">
 	
@@ -87,8 +85,40 @@
 	}
 
 	.mb_11{
-		
+		/*background-color: #42f4b9;*/
 	}
+	
+	
+	
+	
+	
+	a.bc{
+	  display: block;
+	  height: 35px;
+	  width: 100%;
+	  padding-top:5px;
+	  padding-bottom: 5px;
+	  text-decoration: none;
+	  background: #fdc689;
+	  line-height: 37px;
+	  text-align: center;
+	  font-size: 16pt;
+	  border-radius: 3px;
+	  box-shadow: 1px 2px 4px #d4842c;
+	  color: red;
+	  font-weight: bold;
+	}
+	a.bc:active{  /* クリック時の設定 */
+	  -ms-transform: translateY(2px);
+	  -webkit-transform: translateY(2px);
+	  transform: translateY(2px);
+	  box-shadow:none;
+	}
+	
+	
+	
+	
+	
 
 	a.bk{
 	  display: block;
@@ -172,7 +202,7 @@
 
 </head>
 <body>
-<div class="nav"><h1><a onclick="location.href='/index.php';" style="cursor:pointer;">XYZFestival2017</a></h1></div>
+<div class="nav"><h1><a onclick="location.href='index.php';" style="cursor:pointer;">XYZFestival2017</a></h1></div>
 <div class="wrapper">
 	<div class="content" align="center">
 
@@ -212,36 +242,16 @@ echo <<< EOM
 <div align=center>
 <a href="?attr=ms" class="vote" style="background: #c41da0;box-shadow: 1px 2px 4px #72135e;">Ms</a><br>
 <a href="?attr=mr" class="vote" style="background: #8daf05;box-shadow: 1px 2px 4px #49590a;">Mr</a><br>
-<!--
-<a href="?attr=hidems" class="vote" style="background: #a437b7;box-shadow: 1px 2px 4px #72135e;">裏Ms</a><br>
-<a href="?attr=hidemr" class="vote" style="background: #7d9b1a;box-shadow: 1px 2px 4px #72135e;">裏Mr</a><br>
--->
-<!--<a href="?attr=karaoke" class="vote" style="background: #0b8fb7;box-shadow: 1px 2px 4px #104a5b;">カラオケ</a><br><br><br>-->
-
-<!--
-<h2>ミス・ミスターの投票終了しました！</h2>
--->
-
-<!--
-<br><span style="color:blue;"><h2>※予告※</h2><h3>裏ミス・裏ミスター　18:20～　投票スタート！！</h3>
-</span>
-<p>進行の度合いにより、開始時間は前後する場合があります。</p>
--->
-	
-<!--<span style="color:blue;"><h2>現在、投票受付中です！</h2></span>-->
-	
-
-
-<!--////進行状況に合わせて上記の内容をコメントアウト／アンコメントして下さい。////-->
-
-
+<a href="?attr=karaoke" class="vote" style="background: #0b8fb7;box-shadow: 1px 2px 4px #104a5b;">カラオケ</a><br>
+<br>
+<span style="color:blue;"><h2>投票受付はすべて終了しました。<br>今年も多数のご投票ありがとうございました！</h2></span>
 
 </div>
 <br><br>
 <hr>
 <h3>マイページ</h3>
 <center>
-<strong>あなたが1日に投票できる回数:<br>Ms・Mr・カラオケ それぞれ<span style="color:red">{$maxvotetimes}回</span>ずつ</strong>
+<strong>あなたが1日に投票できる回数:<br>Ms・Mr それぞれ<span style="color:red">{$maxvotetimes}回</span>ずつ</strong>
 <br><br>
 <p style="font-size:10pt;">
 ※↓のフォームから、お持ちのクーポンを登録することが出来ます。<br>
@@ -252,7 +262,6 @@ echo <<< EOM
 </form>
 </center>
 <br><br>
-<!--a href="admin/sqltest.php">[管理ページ]</a-->
 
 </div>
 </div>
@@ -280,7 +289,7 @@ EOM;
 	$ms_member 			= "<h3>所属：Ms</h3>"							.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
 	$mr_member 			= "<h3>所属：Mr</h3>"							.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
 	$dsm_member 		= "<h3>所属：ドレスショーモデル</h3>"			.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
-	$hidems_member 		= "<h3>所属：裏Ms</h3>"							.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
+	$hidems_member 		= "<h3>所属：裏ミス・ミスター</h3>"							.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
 	$hidemr_member 		= "<h3>所属：裏Mr</h3>"							.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
 	$karaoke_member 	= "<h3>所属：カラオケ</h3>"						.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
 	$boku_member 		= "<h3>所属：謎の人</h3>"						.PHP_EOL."<table>".PHP_EOL;//"<tr><td>ID</td><td>写真</td><th>氏名</th><td>点数</td><td></td></tr>".PHP_EOL;
@@ -333,24 +342,35 @@ if($result){
 
     		break;
 
+
+
+# 裏MS
     	case '21':
     		# code...
 
-    	    $hidems_member 		.= "<tr class=\"mb_".$trcss."\"><td><img src=\"memberphoto/$memberID.jpg\"></td> <th>$name($furigana)</th>  <td><div align=center><a href=\"detail.php?memberID=".$memberID."\" class=\"voted\">この人の詳細</a></div></td></tr>".PHP_EOL;
+    	    $hidems_member 		.= "<tr class=\"mb_".$trcss."\"><td>&nbsp;</td> <th>$name</th>  <td><div align=center><a class=\"bc\" onclick=\"if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}\" href=\"#\">この人に投票する！</a></div></td></tr>".PHP_EOL;
+    	    
+    	    
+/*
+
+
+*/
 
     		break;
+
+# 裏MR
 
     	case '22':
     		# code...
 
-    	    $hidemr_member 		.= "<tr class=\"mb_".$trcss."\"><td><img src=\"memberphoto/$memberID.jpg\"></td> <th>$name($furigana)</th>  <td><div align=center><a href=\"detail.php?memberID=".$memberID."\" class=\"voted\">この人の詳細</a></div></td></tr>".PHP_EOL;
+    	    $hidemr_member 		.= "<tr class=\"mb_".$trcss."\"><td>&nbsp;</td> <th>$name</th>  <td><div align=center><a class=\"bc\" onclick=\"if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}\" href=\"#\">この人に投票する！</a></div></td></tr>".PHP_EOL;
 
     		break;
 
     	case '31':
     		# code...
 
-    	    $karaoke_member 	.= "<tr class=\"mb_".$trcss."\"><td><img src=\"memberphoto/$memberID.jpg\"></td> <th>$name($furigana)</th>  <td><div align=center><a href=\"detail.php?memberID=".$memberID."\" class=\"voted\">このグループの詳細</a></div></td></tr>".PHP_EOL;
+    	    $karaoke_member 	.= "<tr class=\"mb_".$trcss."\"><td><img src=\"memberphoto/$memberID.jpg\"></td> <th>$name($furigana)</th>  <td><div align=center><a href=\"detail.php?memberID=".$memberID."\" class=\"voted\">この人・グループの詳細</a></div></td></tr>".PHP_EOL;
 
     		break;
 
@@ -370,13 +390,13 @@ if($result){
 $mysqli->close();
 
 
-$ms_member 		.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$mr_member 		.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$dsm_member  	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$hidems_member  .= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$hidemr_member 	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$karaoke_member .= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
-$boku_member 	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='/';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$ms_member 		.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$mr_member 		.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$dsm_member  	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$hidems_member  .= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$hidemr_member 	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$karaoke_member .= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
+$boku_member 	.= "</table><br><br><br><br><a class=\"bk\" onclick=\"location.href='index.php';\" href=\"#\">←前に戻る</a>".PHP_EOL;
 
 ?>
 
@@ -419,7 +439,9 @@ switch ($attrget) {
 
 </div>
 </div>
-
+<iframe name="waku" style="visibility: hidden;" width="1" height="1"></iframe>
 </body>
+
+
 
 </html>

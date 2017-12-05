@@ -97,12 +97,12 @@ $result2 .= <<< EOM
 	<td>
 		<select name="gakubu">
 			<option value="$gakubu" selected>$gakubu</option>
-			<option value="総合管理学部総合管理学科">総合管理学部総合管理学科</option>
-			<option value="文学部日本語日本文学科">文学部日本語日本文学科</option>
-			<option value="文学部英語英米文学科">文学部英語英米文学科</option>
-			<option value="環境共生学部環境資源学科">環境共生学部環境資源学科</option>
-			<option value="環境共生学部居住環境学科">環境共生学部居住環境学科</option>
-			<option value="環境共生学部食健康科学科">環境共生学部食健康科学科</option>
+			<option value="理工学部理学科">理工学部理学科</option>
+			<option value="理工学部工学科">理工学部工学科</option>
+			<option value="医学部医学科">医学部医学科</option>
+			<option value="人文学部英文学科">人文学部英文学科</option>
+			<option value="社会学部総合政策学科">社会学部総合政策学科</option>
+			<option value="社会学部社会学科">社会学部社会学科</option>
 		</select>
 
 	</td>

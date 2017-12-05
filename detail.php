@@ -143,7 +143,7 @@
 
 </head>
 <body>
-<div class="nav"><h1><a onclick="location.href='/index.php';" style="cursor:pointer;">XYZFestival2017</a></h1></div>
+<div class="nav"><h1><a onclick="location.href='index.php';" style="cursor:pointer;">XYZFestival2017</a></h1></div>
 <div class="wrapper">
 	<div class="content">
 
@@ -255,19 +255,12 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=ms">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=ms">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
 	
-
-EOM;
-
-
-/*
 <a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>
 
-*/
-
-
+EOM;
 
 
 
@@ -321,18 +314,13 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=mr">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=mr">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
 
-	
-EOM;
-
-
-/*
 <a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>
 
-*/
 
+EOM;
 
 
     		break;
@@ -396,7 +384,7 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=hidems">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=hidems">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
 
 <a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>
@@ -453,7 +441,7 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=hidems">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=hidems">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
 
 <a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>
@@ -479,17 +467,15 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=karaoke">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=karaoke">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
+
+<a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>
 
 EOM;
 
 
-/*
 
-<a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人・グループに投票する！</a>
-
-*/
 
     		break;
 
@@ -541,7 +527,7 @@ $result2 .= <<<EOM
 	</tr>
 </table>
 
-<a class="bk" onclick="history.back(1)" href="/?attr=boku">←前に戻る</a>
+<a class="bk" onclick="history.back(1)" href="index.php?attr=boku">←前に戻る</a>
 <br><br><br><br><br><br><br><br><br><br>
 
 <a class="bc" onclick="if(confirm('本当に投票しますか？\\n一度投票するとやり直すことは出来ません。\\n\\n\\n※公正公平な投票にするため，不正な投票は固く禁じられています。\\nもし不正行為が見つかった場合は，あなたにアクセス禁止の措置がかけられます。')){waku.location='voteFunctionController.php?memberID=$memberID&userprivkey=$userID_0';}" href="#">この人に投票する！</a>

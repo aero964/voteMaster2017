@@ -13,7 +13,7 @@ include("../php/mysqli.php");
 
 	$ms_member 			= "<h3>所属：Ms</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=ms\">投票締め切り</a>]"							.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
 	$mr_member 			= "<h3>所属：Mr</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=mr\">投票締め切り</a>]"							.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
-	$dsm_member 		= "<h3>所属：ドレスショーモデル</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=dsm\">投票締め切り</a>]"		.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
+	$dsm_member 		= "<h3>所属：その他</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=dsm\">投票締め切り</a>]"		.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
 	$hidems_member 		= "<h3>所属：裏Ms</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=hidems\">投票締め切り</a>]"					.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
 	$hidemr_member 		= "<h3>所属：裏Mr</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=hidemr\">投票締め切り</a>]"					.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
 	$karaoke_member 	= "<h3>所属：カラオケ</h3>[<a href=\"voteSystemController.php?shimekiri=true&attr=karaoke\">投票締め切り</a>]"				.PHP_EOL."<table>".PHP_EOL."<tr><td>ID</td><th>氏名</th><td>点数</td></tr>".PHP_EOL;
