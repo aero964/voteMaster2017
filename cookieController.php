@@ -77,17 +77,17 @@ if( isset( $userID_0 ) ) {
 
 
 if(!isset($_COOKIE["HK17Voted_ms"])){
-	setcookie("HK17Voted_ms",		  0, $tomorrow,'/');
-    setcookie("HK17Voted_mr",		  0, $tomorrow,'/');
-    setcookie("HK17Voted_hidems",	  0, $tomorrow,'/');
-    setcookie("HK17Voted_hidemr",	  0, $tomorrow,'/');
-    setcookie("HK17Voted_karaoke",	  0, $tomorrow,'/');
-    setcookie("HK17Voted_kouyasai0",  0, $tomorrow,'/');
-    setcookie("HK17Voted_kouyasai1",  0, $tomorrow,'/');
-    setcookie("HK17Voted_reserved0",  0, $tomorrow,'/');
-    setcookie("HK17Voted_reserved1",  0, $tomorrow,'/');
-    setcookie("HK17Voted_reserved2",  0, $tomorrow,'/');
-    setcookie("HK17Voted_reserved3",  0, $tomorrow,'/');
+    setcookie("HK17Voted_ms",		0, $tomorrow,'/');
+    setcookie("HK17Voted_mr",		0, $tomorrow,'/');
+    setcookie("HK17Voted_hidems",	0, $tomorrow,'/');
+    setcookie("HK17Voted_hidemr",	0, $tomorrow,'/');
+    setcookie("HK17Voted_karaoke",	0, $tomorrow,'/');
+    setcookie("HK17Voted_kouyasai0",  	0, $tomorrow,'/');
+    setcookie("HK17Voted_kouyasai1",  	0, $tomorrow,'/');
+    setcookie("HK17Voted_reserved0",  	0, $tomorrow,'/');
+    setcookie("HK17Voted_reserved1",  	0, $tomorrow,'/');
+    setcookie("HK17Voted_reserved2",  	0, $tomorrow,'/');
+    setcookie("HK17Voted_reserved3",  	0, $tomorrow,'/');
 }
 
 
