@@ -1,0 +1,153 @@
+	html{
+		margin: 0;
+	}
+
+	body{
+		margin: 0;
+		font-family: meiryo UI;
+	}
+
+	.wrapper{
+		height: 100%;
+		margin: 0;
+		/*background-color: #00ff00;*/
+		padding: 5px;
+	}
+
+	.nav{
+		padding: 1px;
+		margin: 0;
+		position: fixed;
+		width: 100%;
+		background-color: #11a394;
+		color: #ffffff;
+		box-shadow: 0 3px 4px #2f6d67;
+	}
+
+	h1{
+		padding-left: 20px;
+		font-size: 14pt;
+	}
+	h3{
+		text-align: center;
+	}
+
+	tr{
+		width: 99%;
+		border: 1px solid;
+		margin-bottom:14px;
+		text-align: center;
+		display: block;
+		padding: 8px;
+	}
+
+	table{
+		left: 0;
+		right: 0;
+		text-align: center;
+		width: 100%;
+		max-width: 790px;
+	}
+
+	td,th{
+		width: 99%;
+		margin-bottom: 1.1em;
+	    display: block;
+	}
+
+	th{
+		text-align: center;
+	}
+
+	img{
+		max-width: 300px;
+		max-height: 400px; 
+	}
+
+
+	.mb_00{
+		background-color: #cccccc;
+		display: none;
+	}
+
+	.mb_10{
+		background-color: #42f4b9;
+		display: none;
+	}
+
+	.mb_11{
+		
+	}
+
+	a.bk{
+	  display: block;
+	  height: 35px;
+	  width: 100%;
+	  max-width: 500px;
+	  text-decoration: none;
+	  background: #22938a;
+	  color: #fff;
+	  line-height: 37px;
+	  text-align: center;
+	  border-radius: 3px;
+	  box-shadow: 1px 2px 4px #19514c;
+	  position: fixed;
+	  bottom: 10px;
+	}
+	a.bk:active{  /* クリック時の設定 */
+	  -ms-transform: translateY(2px);
+	  -webkit-transform: translateY(2px);
+	  transform: translateY(2px);
+	  box-shadow:none;
+	}
+
+
+
+	a.vote{
+	  display: block;
+	  height: 35px;
+	  width: 100%;
+	  max-width: 500px;
+	  text-decoration: none;
+	  background: #22938a;
+	  color: #fff;
+	  line-height: 37px;
+	  text-align: center;
+	  font-weight: bold;
+	  font-size: 21pt;
+	  border-radius: 3px;
+	  box-shadow: 1px 2px 4px #19514c;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	}
+	a.vote:active{  /* クリック時の設定 */
+	  -ms-transform: translateY(2px);
+	  -webkit-transform: translateY(2px);
+	  transform: translateY(2px);
+	  box-shadow:none;
+	}
+
+
+
+	a.voted{
+	  display: block;
+	  height: 35px;
+	  width: 100%;
+	  max-width: 500px;
+	  text-decoration: none;
+	  background: #c66e15;
+	  color: #fff;
+	  line-height: 37px;
+	  text-align: center;
+	  font-weight: bold;
+	  border-radius: 3px;
+	  box-shadow: 1px 2px 4px #603e1d;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	}
+	a.voted:active{  /* クリック時の設定 */
+	  -ms-transform: translateY(2px);
+	  -webkit-transform: translateY(2px);
+	  transform: translateY(2px);
+	  box-shadow:none;
+	}
