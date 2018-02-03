@@ -4,143 +4,7 @@
 	<title>○○祭Web投票サイト - 詳細</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<style type="text/css">
-	
-	html{
-		margin: 0;
-	}
-
-	body{
-		margin: 0;
-		font-family: meiryo UI;
-	}
-
-	.wrapper{
-		height: 100%;
-		margin: 0;
-		/*background-color: #00ff00;*/
-		padding: 5px;
-	}
-
-	.nav{
-		padding-left: 20px;
-		padding: 1px;
-		margin: 0;
-		position: fixed;
-		width: 100%;
-		background-color: #11a394;
-		color: #ffffff;
-		box-shadow: 0 3px 4px #2f6d67;
-	}
-
-	h1{
-		padding-left: 20px;
-		font-size: 14pt;
-	}
-	h3{
-		text-align: center;
-	}
-
-
-	tr{
-		width: 100%;
-		/*border: 1px solid;*/
-		margin-bottom:7px;
-		/*text-align: center;*/
-		display: block;
-	}
-
-	table,tr,td,th{
-
-	}
-
-
-	th{
-		text-align: left;
-		background-color: #ffeeee;
-	}
-
-
-	td,th{
-		width: 100%;
-	    display: block;
-	    padding-top: 5px;
-	    padding-bottom: 5px;
-	    padding-left: 15px;
-	}
-
-
-	.mb_00{
-		background-color: #cccccc;
-		display: none;
-	}
-
-	.mb_10{
-		background-color: #42f4b9;
-		display: none;
-	}
-
-	.mb_11{
-		background-color: #42f4b9;
-	}
-
-	a.bc{
-	  display: block;
-	  height: 35px;
-	  width: 100%;
-	  padding-top:5px;
-	  padding-bottom: 5px;
-	  text-decoration: none;
-	  background: #fdc689;
-	  line-height: 37px;
-	  text-align: center;
-	  font-size: 20pt;
-	  border-radius: 3px;
-	  box-shadow: 1px 2px 4px #d4842c;
-	  bottom: 10px;
-	  position: fixed;
-	  color: red;
-	  font-weight: bold;
-	}
-	a.bc:active{  /* クリック時の設定 */
-	  -ms-transform: translateY(2px);
-	  -webkit-transform: translateY(2px);
-	  transform: translateY(2px);
-	  box-shadow:none;
-	}
-
-
-	a.bk{
-	  display: block;
-	  height: 35px;
-	  width: 180px;
-	  text-decoration: none;
-	  background: #22938a;
-	  color: #fff;
-	  line-height: 37px;
-	  text-align: center;
-	  border-radius: 3px;
-	  box-shadow: 1px 2px 4px #19514c;
-	}
-	a.bk:active{  /* クリック時の設定 */
-	  -ms-transform: translateY(2px);
-	  -webkit-transform: translateY(2px);
-	  transform: translateY(2px);
-	  box-shadow:none;
-	}
-
-
-/*	button{
-		font-size: 12pt;
-		width: 100%;
-	}*/
-
-
-
-</style>
-
-
+	<link rel="stylesheet" src="deploy/detail.css" type="text/css">
 </head>
 <body>
 <div class="nav"><h1><a onclick="location.href='index.php';" style="cursor:pointer;">XYZFestival2017</a></h1></div>
@@ -537,13 +401,7 @@ EOM;
     		break;
     }
 
-
-
-
-
 ?>
-
-
 
 <?=$result2;?>
 
